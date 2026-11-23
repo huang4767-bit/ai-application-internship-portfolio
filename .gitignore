@@ -1,0 +1,44 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*secret*
+*credential*
+*token*
+*password*
+
+# Runtime artifacts and private inputs
+*.log
+*.jsonl
+*.parquet
+*.npz
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.bin
+*.sqlite
+*.db
+*.dump
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Business data tables
+*.csv
+*.xlsx
+*.xls
+*.feather
+*.arrow
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.cache/
+models/
+checkpoints/
+!results/checked-summary.csv

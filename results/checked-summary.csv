@@ -1,0 +1,18 @@
+metric,value,unit,definition,boundary
+knowledge_draft_rows,1187,rows,Earlier reviewed knowledge draft,Not the current runtime library
+runtime_snapshot_rows,492,records,Default strategy snapshot dated 2026-09-23,Not a proven unchanged subset of the draft
+body_matches,438/492,records,Exact normalized measure-body matches between snapshot and draft,Does not establish full approval lineage
+four_field_matches,325/492,records,Risk category plus risk item plus sub-risk plus body match,Stricter match rule than body-only
+original_cases,7450,pig-herd cases,Fixed-candidate ranking evaluation scope,Not a user count
+original_questions,10516,questions,Source question count in evaluation,Distinct unit from cases
+strict_common_cases,7303,cases,Common strict evaluation set,Evaluation denominator only
+strict_common_questions,10121,questions,Common strict evaluation set,Evaluation denominator only
+reference_top1_agreement,79.72,percent,Mutual Top-1 agreement between the two reference models on strict common set,Not business accuracy
+k1_knowledge_items,22,items,Supplementary knowledge used in K1 after candidate capture,Does not change retrieval
+k1_matched_cases,7233,cases,Cases with an associated K1 knowledge item,Out of 7450 original cases
+k1_original_calls,44700,model calls,Six models multiplied by 7450 cases,Not 44700 independent cases
+k1_strict_cases,7182,cases,Unified strict K1 set,Evaluation denominator only
+k1_strict_questions,9671,questions,Unified strict K1 set,Evaluation denominator only
+archive_offline_passed,247,checks,Offline check of isolated archive copy on 2026-11-17,Later archive audit; not model or business evaluation
+archive_offline_skipped,8,checks,Offline check of isolated archive copy on 2026-11-17,Skipped checks; not business acceptance
+
